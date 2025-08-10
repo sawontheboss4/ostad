@@ -9,10 +9,10 @@ on:
       - main
 
 jobs:
-  read_hello_file:       
+  test_job      
       runs-on: ubuntu-latest
-      -name: Git Clone
-      -uses: actions/checkout@v2
+     -name: Git Clone
+      uses: actions/checkout@v2
 
-      name: Read hello.txt
-      run: cat hello.txt
+      -name: Read hello.txt
+       run: cat hello.txt
